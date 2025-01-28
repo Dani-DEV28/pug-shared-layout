@@ -11,7 +11,10 @@ app.set('views', "./src/views");
 app.use(express.static('./src/public'));
 
 //routes
-app.get("/home", (req, res) => {res.render('home', { author: "<Your Name>" })})
+const author = "<Your Name>";
+app.get("/", (req, res) => {res.render('home', { author })});
+app.get("/about", (req, res) => {res.render('about', { author })});
+app.get("/contact", (req, res) => {res.render('contact', { author })});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
