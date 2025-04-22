@@ -4,6 +4,7 @@ html
         meta(charset='utf-8')
         title= title
         link(rel='stylesheet', href='styles.css')
+        block css
 
     body 
         header
@@ -18,7 +19,18 @@ html
                     li 
                         a(href='/contact') Contact
         
-        block content
+        main 
+            aside 
+                nav 
+                    ul 
+                        li 
+                            a(href='/') Home 
+                        li 
+                            a(href='/about') About 
+                        li 
+                            a(href='/contact') Contact
+
+            block content
 
         footer 
             p Copyright © 2018. All rights reserved.

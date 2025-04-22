@@ -47,21 +47,6 @@ p {
     font-size: 1.2rem;
 }
 
-.form-group {
-    width: 90%;
-}
-
-label, input, textarea {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 5px;
-    font-size: 1rem;
-}
-
 /* Header section styling */
 header {
     background-color: #026476;
